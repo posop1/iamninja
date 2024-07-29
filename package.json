@@ -1,5 +1,5 @@
 {
-  "name": "expense-accounting",
+  "name": "iamninja",
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -12,8 +12,8 @@
     "turbo": "latest",
     "typescript": "^5.4.5"
   },
-  "packageManager": "pnpm@8.15.6",
-  "engines": {
-    "node": ">=18"
+  "packageManager": "pnpm@9.3.0",
+  "dependencies": {
+    "dotenv-cli": "^7.4.2"
   }
 }
