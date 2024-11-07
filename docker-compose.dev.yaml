@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  mysql:
+    image: mysql:5.7
+    restart: unless-stopped
+    volumes:
+      - mysql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    container_name: iamninja-mysql
+    networks:
+      - iamninja
+    environment:
+      MYSQL_ROOT_PASSWORD: 1!QQQqqq
+      MYSQL_DATABASE: iamninja
+
+networks:
+  iamninja:
+
+volumes:
+  mysql:
